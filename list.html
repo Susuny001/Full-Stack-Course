@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+</head>
+<body>
+    <!-- 直接打div.todo-app, 按tab, 直接创建 -->
+    <div class="todo-app">
+        <div class="title">xxx的todo</div>
+        <div class="todo-form">
+            <input class="todo-input" type="text" placeholder="add a note">
+            <div class="todo-button">Add Todo</div>
+        </div>
+        <div class="item completed "> <!-- 空格多个类名 -->
+            <div class="checkboxandname">
+                <input type="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div class="checkboxandname">
+                <input type="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div class="checkboxandname">
+                <input type="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+    </div>
+
+
+
+
+    <style>
+        div:not([class]) {
+            background-color: red; /* 你想变啥色就写啥色 */
+            width: 10px;
+            height: 10px;
+        }
+
+        body {
+            background : linear-gradient(
+                to right,
+                purple,
+                blue
+            ) ;
+        }
+        .todo-app{
+            width : 98%; /* 这个98%是网页的98，可以随着变*/
+            height : 500px;
+            background-color: #ffff;
+            padding-top: 30px;
+            box-sizing:border-box;
+            border-radius: 5px;
+            margin-top : 40px;
+            margin-left: 1% ;
+        }
+        .title{
+            font-size:30px;
+            font-weight:700;
+            text-align:center;
+        }
+
+        .todo-form {
+            display: flex ; /*变成横着排*/
+            margin-top:20px;
+            margin-left:30px;
+
+        }
+
+        .todo-input {
+            border : 1px solid #dfe1e5;
+            outline : none;
+            width:60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+            padding-left : 20px;
+        }
+
+        .todo-button{
+            width : 100px;
+            height: 52px;
+            border-radius: 0 20px 20px 0;
+
+            text-align :center;
+            background: linear-gradient(
+                to right,
+                purple,
+                blue
+            );
+            color:#ffff;
+            line-height: 52px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .item{
+            display: flex   ; /*flex布局语法*/
+            align-items: center ;
+            justify-content: space-between;
+
+            box-sizing : border-box;
+            width: 80%;
+            height:50px;
+            margin:10px auto;
+            padding:16px;
+            border-radius: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+        }
+
+        .del{
+            color : red;
+        }
+
+        .completed{
+
+        }
+
+        /*margin-top加外边；padding-top加内边；box-sizing:border-box控制边距*/
+    </style>
+
+
+</body>
+</html>
