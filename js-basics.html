@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- “注意！接下来的内容不是 HTML，是 JavaScript 代码，我要切换成 JS 引擎来执行它。” -->>
+<script>
+    // let 创建值, 普通对象、自定义对象，依旧用`.`调用Method或Attribute
+    let str = '123qwe中文';
+    let num = 114514;
+    let bool = true;
+    let obj = {
+        name:'吴佳桐',
+        age:18,
+        bool:true
+    };
+    obj.name = 'None';
+    delete obj.bool;  //这种操作闻所未闻
+    console.log(obj.name); 
+
+    console.log(num==str); //只关心值相等
+    console.log(num===str);//关心数据的值和类型，返回true/false
+    //if-else用法和C基本一样喔
+</script>
+
+</body>
+</html>
